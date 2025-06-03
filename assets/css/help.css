@@ -326,4 +326,37 @@ body {
 .submit-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(104, 255, 34, 0.3);
+}
+
+.help-section .section-content {
+    display: none;
+}
+
+.help-item .help-item-content {
+    display: none;
+}
+
+.section-header.active + .section-content {
+    display: block;
+}
+
+.help-item-header.active + .help-item-content {
+    display: block;
+}
+
+/* Добавляем стили для иконок */
+.section-header .section-icon,
+.help-item-header .item-icon {
+    transition: transform 0.3s ease;
+}
+
+.section-header.active .section-icon,
+.help-item-header.active .item-icon {
+    transform: rotate(45deg);
+}
+
+/* Добавляем стили для активных состояний */
+.section-header.active,
+.help-item-header.active {
+    background: rgba(104, 255, 34, 0.1);
 } 
