@@ -69,4 +69,4 @@ git clone https://github.com/your-username/FILShop.git
 1. Свяжитесь с нами через форму обратной связи
 
 
-© 2025 FILShop
+© 2025 FILShop, создано в целях ознакомления, не является коммерческим проектом
