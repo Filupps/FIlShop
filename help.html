@@ -185,25 +185,6 @@
     <script type="text/babel" src="assets/js/help.js"></script>
     <script src="assets/js/notifications.js"></script>
     <script src="assets/js/menu.js"></script>
-    <script>
-        // Гамбургер меню
-        const hamburger = document.querySelector('.hamburger-menu');
-        const menu = document.querySelector('.menu');
-        const body = document.body;
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            menu.classList.toggle('active');
-        });
-
-        // Закрытие меню при клике вне его
-        document.addEventListener('click', (e) => {
-            if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
-                hamburger.classList.remove('active');
-                menu.classList.remove('active');
-            }
-        });
-    </script>
     <script type="text/babel">
         // Инициализация CartProvider для обновления счетчика корзины
         ReactDOM.render(
