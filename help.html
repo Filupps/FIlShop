@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр помощи FILShop | Поддержка и FAQ</title>
+    <meta name="description" content="Центр помощи FILShop - ответы на часто задаваемые вопросы, инструкции по покупке игр, пополнению баланса и решению технических проблем. Круглосуточная поддержка.">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/help.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/img/icons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Cart Provider -->
+    <script type="text/babel" src="assets/js/cart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-left">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/img/icons/MainIcon.svg" alt="Fils Shop Logo" class="logo-icon">
+                </a>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <div class="menu-profile">
+                        <div class="profile-glow-outer">
+                            <div class="profile-glow-inner">
+                                <img src="assets/img/icons/Avatar.svg" alt="Профиль" class="profile-icon">
+                            </div>
+                        </div>
+                        <span class="profile-name">Филипп</span>
+                        <div class="balance-container">
+                            <span class="balance-text">1 240</span>
+                            <span class="ruble-icon">₽</span>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href='catalog.html'">
+                            Каталог <span class="arrow">&#9662;</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="catalog.html?genre=action">Экшн</a>
+                            <a href="catalog.html?genre=adventure">Приключения</a>
+                            <a href="catalog.html?genre=rpg">Ролевые</a>
+                            <a href="catalog.html?genre=strategy">Стратегии</a>
+                            <a href="catalog.html?genre=simulator">Симуляторы</a>
+                            <a href="catalog.html?genre=sport">Спортивные</a>
+                        </div>
+                    </div>
+                    <a href="#" class="menu-item">Отзывы</a>
+                    <a href="help.html" class="menu-item">Помощь</a>
+                </div>
+            </div>
+            <div class="user-info">
+                <a href="cart.html" class="cart-container">
+                    <div class="cart-icon">
+                        <img src="assets/img/icons/cart.svg" alt="Корзина">
+                        <span class="cart-counter">0</span>
+                    </div>
+                    <span>Корзина</span>
+                </a>
+                <div class="profile-glow-outer">
+                    <div class="profile-glow-inner">
+                        <img src="assets/img/icons/Avatar.svg" alt="Профиль" class="profile-icon">
+                    </div>
+                </div>
+                <span>Филипп</span>
+                <div class="balance-container">
+                  <span class="balance-text">1 240</span>
+                  <span class="ruble-icon">₽</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="help-container">
+        <h1>Центр помощи</h1>
+        
+        <div class="help-search">
+            <input type="text" placeholder="Поиск по вопросам...">
+            <button class="search-button">Найти</button>
+        </div>
+
+        <div class="help-sections">
+            <div class="help-section">
+                <div class="section-header">
+                    <h2>Часто задаваемые вопросы</h2>
+                    <span class="section-icon">+</span>
+                </div>
+                <div class="section-content">
+                    <div class="help-item">
+                        <div class="help-item-header">
+                            <h3>Как купить игру?</h3>
+                            <span class="item-icon">+</span>
+                        </div>
+                        <div class="help-item-content">
+                            <p>Для покупки игры выполните следующие шаги:</p>
+                            <ol>
+                                <li>Выберите игру в каталоге</li>
+                                <li>Нажмите кнопку "Купить"</li>
+                                <li>Выберите способ оплаты</li>
+                                <li>Подтвердите покупку</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-item">
+                        <div class="help-item-header">
+                            <h3>Как пополнить баланс?</h3>
+                            <span class="item-icon">+</span>
+                        </div>
+                        <div class="help-item-content">
+                            <p>Пополнить баланс можно следующими способами:</p>
+                            <ul>
+                                <li>Банковской картой</li>
+                                <li>Через СБП</li>
+                                <li>Электронными кошельками</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-section">
+                <div class="section-header">
+                    <h2>Техническая поддержка</h2>
+                    <span class="section-icon">+</span>
+                </div>
+                <div class="section-content">
+                    <div class="help-item">
+                        <div class="help-item-header">
+                            <h3>Игра не запускается</h3>
+                            <span class="item-icon">+</span>
+                        </div>
+                        <div class="help-item-content">
+                            <p>Если игра не запускается, проверьте следующее:</p>
+                            <ul>
+                                <li>Системные требования игры</li>
+                                <li>Наличие всех необходимых обновлений</li>
+                                <li>Антивирусные программы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-support">
+            <h2>Не нашли ответ на свой вопрос?</h2>
+            <p>Опишите вашу проблему, и мы поможем вам её решить</p>
+            <form class="support-form">
+                <div class="form-group">
+                    <label for="problem-title">Тема</label>
+                    <input type="text" id="problem-title" required placeholder="Краткое описание проблемы">
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" required placeholder="Ваш email для связи">
+                </div>
+                <div class="form-group">
+                    <label for="problem-description">Описание</label>
+                    <textarea id="problem-description" required placeholder="Подробно опишите вашу проблему"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="media-upload">Прикрепить файлы</label>
+                    <div class="media-upload-container">
+                        <input type="file" id="media-upload" multiple accept="image/*,video/*">
+                        <div class="upload-preview"></div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="text/babel" src="assets/js/help.js"></script>
+    <script src="assets/js/notifications.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script>
+        // Гамбургер меню
+        const hamburger = document.querySelector('.hamburger-menu');
+        const menu = document.querySelector('.menu');
+        const body = document.body;
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        // Закрытие меню при клике вне его
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                menu.classList.remove('active');
+            }
+        });
+    </script>
+    <script type="text/babel">
+        // Инициализация CartProvider для обновления счетчика корзины
+        ReactDOM.render(
+            <CartProvider>
+                <div></div>
+            </CartProvider>,
+            document.createElement('div')
+        );
+    </script>
+</body>
+</html> 

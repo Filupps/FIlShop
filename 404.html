@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена | FILShop</title>
+    <meta name="description" content="Страница не найдена. Вернитесь на главную страницу FILShop или воспользуйтесь поиском.">
+    <link rel="stylesheet" href="/assets/css/404.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1>Страница не найдена</h1>
+            <p>К сожалению, запрашиваемая страница не существует. Возможно, она была перемещена или удалена.</p>
+            
+            <div class="error-actions">
+                <a href="/" class="btn-primary">Вернуться на главную</a>
+                <a href="/catalog.html" class="btn-secondary">Перейти в каталог</a>
+            </div>
+
+            <div class="error-search">
+                <h2>Поиск игр</h2>
+                <form class="search-form" action="/catalog.html" method="GET">
+                    <input type="text" name="search" placeholder="Введите название игры...">
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
+
+            <div class="popular-categories">
+                <h2>Популярные категории</h2>
+                <div class="categories-grid">
+                    <a href="/catalog.html?genre=action" class="category-card">
+                        <img src="/assets/img/categories/action.webp" alt="Экшен">
+                        <span>Экшен</span>
+                    </a>
+                    <a href="/catalog.html?genre=rpg" class="category-card">
+                        <img src="/assets/img/categories/rpg.webp" alt="RPG">
+                        <span>RPG</span>
+                    </a>
+                    <a href="/catalog.html?genre=strategy" class="category-card">
+                        <img src="/assets/img/categories/strategy.webp" alt="Стратегии">
+                        <span>Стратегии</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="error-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/help.html">Помощь</a>
+                <a href="/contacts.html">Контакты</a>
+                <a href="/terms.html">Условия использования</a>
+                <a href="/privacy.html">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-copyright">
+                © 2024 FILShop. Все права защищены.
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

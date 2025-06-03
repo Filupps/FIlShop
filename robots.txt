@@ -1,0 +1,26 @@
+# robots.txt для FILShop
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /catalog.html
+Allow: /cart.html
+Allow: /help.html
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /assets/fonts/
+
+# Запрещаем индексацию служебных файлов и директорий
+Disallow: /assets/videos/
+Disallow: /*.json$
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*.git/
+Disallow: /*.env
+Disallow: /*.config
+
+# Указываем расположение sitemap
+Sitemap: /sitemap.xml
+
+# Указываем задержку между запросами
+Crawl-delay: 10 

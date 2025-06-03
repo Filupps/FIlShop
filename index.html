@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FILShop - Магазин цифровых игр | Купить игры онлайн</title>
+  <meta name="description" content="FILShop - ваш надежный магазин цифровых игр. Большой выбор игр различных жанров, мгновенная доставка, безопасная оплата и круглосуточная поддержка.">
+  
+  <!-- Open Graph теги -->
+  <meta property="og:title" content="FILShop - Магазин цифровых игр | Купить игры онлайн">
+  <meta property="og:description" content="FILShop - ваш надежный магазин цифровых игр. Большой выбор игр различных жанров, мгновенная доставка, безопасная оплата и круглосуточная поддержка.">
+  <meta property="og:image" content="https://filshop.ru/assets/img/icons/MainIcon.svg">
+  <meta property="og:url" content="https://filshop.ru">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FILShop">
+  
+  <!-- Schema.org микроразметка -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FILShop",
+    "url": "https://filshop.ru",
+    "logo": "https://filshop.ru/assets/img/icons/MainIcon.svg",
+    "description": "Магазин цифровых игр с широким выбором игр различных жанров",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+7-XXX-XXX-XXXX",
+      "contactType": "customer service",
+      "availableLanguage": "Russian"
+    }
+  }
+  </script>
+  
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- React и ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Babel для JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/icons/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+  <!-- Скрипты для проверки ссылок -->
+  <link href="assets/css/external-links.css" rel="stylesheet">
+  <script src="assets/js/link-checker.js"></script>
+  <script src="assets/js/external-links.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-left">
+        <a href="/" class="logo-link">
+          <img src="assets/img/icons/MainIcon.svg" alt="Fils Shop Logo" class="logo-icon">
+        </a>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu">
+          <div class="menu-profile">
+            <div class="profile-glow-outer">
+              <div class="profile-glow-inner">
+                <img src="assets/img/icons/Avatar.svg" alt="Профиль" class="profile-icon">
+              </div>
+            </div>
+            <span class="profile-name">Филипп</span>
+            <div class="balance-container" onclick="window.location.href='profile-topup.html'">
+              <span class="balance-text">1 240</span>
+              <span class="ruble-icon">₽</span>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='catalog.html'">
+              Каталог <span class="arrow">&#9662;</span>
+            </button>
+            <div class="dropdown-content">
+              <a href="catalog.html?genre=action">Экшн</a>
+              <a href="catalog.html?genre=adventure">Приключения</a>
+              <a href="catalog.html?genre=rpg">Ролевые</a>
+              <a href="catalog.html?genre=strategy">Стратегии</a>
+              <a href="catalog.html?genre=simulator">Симуляторы</a>
+              <a href="catalog.html?genre=sport">Спортивные</a>
+            </div>
+          </div>
+          <a href="reviews.html" class="menu-item">Отзывы</a>
+          <a href="help.html" class="menu-item">Помощь</a>
+        </div>
+      </div>
+      <div class="user-info">
+        <a href="cart.html" class="cart-container">
+          <div class="cart-icon">
+            <img src="assets/img/icons/cart.svg" alt="Корзина">
+            <span class="cart-counter">0</span>
+          </div>
+          <span>Корзина</span>
+        </a>
+        <div class="profile-glow-outer">
+          <div class="profile-glow-inner">
+            <img src="assets/img/icons/Avatar.svg" alt="Профиль" class="profile-icon">
+          </div>
+        </div>
+        <span>Филипп</span>
+        <div class="balance-container" onclick="window.location.href='profile-topup.html'">
+          <span class="balance-text">1 240</span>
+          <span class="ruble-icon">₽</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="root"></main>
+
+  <script type="text/babel" src="assets/js/index.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

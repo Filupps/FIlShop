@@ -1,0 +1,36 @@
+.external-link-icon {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 0.8em;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+a[data-external="true"] {
+    position: relative;
+    color: #0066cc;
+}
+
+a[data-external="true"]:hover {
+    color: #004499;
+}
+
+a[data-external="true"]:hover .external-link-icon {
+    color: #004499;
+}
+
+/* Стили для предупреждения о внешней ссылке */
+a[data-external="true"]::after {
+    content: "⚠";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 12px;
+    color: #ff6b6b;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+a[data-external="true"]:hover::after {
+    opacity: 1;
+} 

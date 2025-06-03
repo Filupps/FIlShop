@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина FILShop | Оформление заказа игр</title>
+  <meta name="description" content="Корзина FILShop - удобное оформление заказа игр. Проверьте выбранные товары, выберите способ оплаты и получите игры мгновенно после покупки.">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/cart.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/order-modal.css">
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Babel for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/icons/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-left">
+        <a href="index.html" class="logo-link">
+          <img src="assets/img/icons/MainIcon.svg" alt="Fils Shop Logo" class="logo-icon">
+        </a>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu">
+          <div class="menu-profile">
+            <div class="profile-glow-outer">
+              <div class="profile-glow-inner">
+                <img src="assets/img/icons/Avatar.svg" alt="Профиль" class="profile-icon">
+              </div>
+            </div>
+            <span class="profile-name">Филипп</span>
+            <div class="balance-container">
+              <span class="balance-text">1 240</span>
+              <span class="ruble-icon">₽</span>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='catalog.html'">
+              Каталог <span class="arrow">&#9662;</span>
+            </button>
+            <div class="dropdown-content">
+              <a href="catalog.html?genre=action">Экшн</a>
+              <a href="catalog.html?genre=adventure">Приключения</a>
+              <a href="catalog.html?genre=rpg">Ролевые</a>
+              <a href="catalog.html?genre=strategy">Стратегии</a>
+              <a href="catalog.html?genre=simulator">Симуляторы</a>
+              <a href="catalog.html?genre=sport">Спортивные</a>
+            </div>
+          </div>
+          <a href="#" class="menu-item">Отзывы</a>
+          <a href="help.html" class="menu-item">Помощь</a>
+        </div>
+      </div>
+      <div class="user-info">
+        <a href="cart.html" class="cart-container">
+          <div class="cart-icon">
+            <img src="assets/img/icons/cart.svg" alt="Корзина">
+            <span class="cart-counter">0</span>
+          </div>
+          <span>Корзина</span>
+        </a>
+        <div class="profile-glow-outer">
+          <div class="profile-glow-inner">
+            <img src="assets/img/icons/Avatar.svg" alt="Профиль" class="profile-icon">
+          </div>
+        </div>
+        <span>Филипп</span>
+        <div class="balance-container">
+          <span class="balance-text">1 240</span>
+          <span class="ruble-icon">₽</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="cart-root"></main>
+ 
+  <script type="text/babel" src="assets/js/cart.js"></script>
+  <script src="assets/js/order-modal.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html> 
